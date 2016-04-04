@@ -25,10 +25,9 @@ repositories {
 
 dependencies {
     compile 'com.google.apis:google-api-services-qpxExpress:v1-rev18-1.21.0'
-}
-
-dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile "com.android.support:appcompat-v7:${supportLibVersion}"
+    compile "com.android.support:design:${supportLibVersion}"
+    compile "com.android.support:recyclerview-v7:${supportLibVersion}"
 }
