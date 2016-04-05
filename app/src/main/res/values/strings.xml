@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Twee</string>
     <string name="more">More</string>
-    <string name="search">Search flights</string>
-    <string name="popular">Most Popular</string>
+
+    <string name="search_flights">Search Flights"</string>
+    <string name="most_popular">Most Popular"</string>
+
     <string name="view_navigation_open">Open</string>
     <string name="view_navigation_close">Close</string>
 </resources>
