@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/actionSearchItem"
+        android:orderInCategory="1"
+        android:title="@string/search"
+        android:icon="@drawable/magnify" />
+
+    <item
+        android:id="@+id/actionPopularItem"
+        android:orderInCategory="1"
+        android:title="@string/popular"
+        android:icon="@drawable/star" />
+
+</menu>
