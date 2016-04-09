@@ -1,12 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Search flights"/>
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
 
-</LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/from_place_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <EditText
+                android:id="@+id/from_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:drawablePadding="@dimen/text_icon_padding"
+                android:singleLine="true"
+                android:hint="@string/input_from"
+                android:drawableStart="@drawable/magnify" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/to_place_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/to_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:drawablePadding="@dimen/text_icon_padding"
+                android:singleLine="true"
+                android:hint="@string/input_to"
+                android:drawableStart="@drawable/magnify" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/date_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType=""
+                android:drawablePadding="@dimen/text_icon_padding"
+                android:singleLine="true"
+                android:hint="@string/input_from"
+                android:drawableStart="@drawable/magnify" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/flight_class_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/flight_class"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:popupTheme="@style/SpinnerStyle"
+                android:scrollbars="none"
+                style="@style/Widget.AppCompat.Spinner.Underlined" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/label_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/adults_label"
+                style="@style/LabelStyle"
+                android:text="@string/adult_label"
+                android:theme="@style/AppDefault" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/children_label"
+                style="@style/LabelStyle"
+                android:text="@string/children_label"
+                android:theme="@style/AppDefault" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/infants_label"
+                style="@style/LabelStyle"
+                android:text="@string/infants_label"
+                android:theme="@style/AppDefault" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/drops_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/adults_spin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                android:popupTheme="@style/SpinnerStyle"
+                style="@style/Widget.AppCompat.Spinner.Underlined" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/children_spin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                android:popupTheme="@style/SpinnerStyle"
+                style="@style/Widget.AppCompat.Spinner.Underlined" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/infants_spin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                android:popupTheme="@style/SpinnerStyle"
+                style="@style/Widget.AppCompat.Spinner.Underlined" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/search"
+                android:theme="@style/ButtonStyle"
+                style="@style/ButtonStyle"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

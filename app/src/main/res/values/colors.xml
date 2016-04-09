@@ -5,4 +5,7 @@
     <color name="colorMainBackground">#E0E0E0</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorGray">#9E9E9E</color>
+    <color name="colorSecondaryText">#CE93D8</color>
+    <color name="colorButton">#039BE5</color>
+    <color name="colorButtonHighlight">#0D47A1</color>
 </resources>

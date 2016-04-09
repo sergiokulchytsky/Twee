@@ -9,4 +9,46 @@
         <item name="colorControlNormal">@color/colorWhite</item>
     </style>
 
+    <style name="TextInput" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/colorGray</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="android:textColorHighlight">@color/colorSecondaryText</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>
+
+    <style name="LabelStyle" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="ButtonStyle" parent="AppTheme">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:text">@string/button_search</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="colorControlHighlight">@color/colorButtonHighlight</item>
+        <item name="colorButtonNormal">@color/colorButton</item>
+    </style>
+
 </resources>

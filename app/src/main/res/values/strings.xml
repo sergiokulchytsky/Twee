@@ -7,4 +7,26 @@
 
     <string name="view_navigation_open">Open</string>
     <string name="view_navigation_close">Close</string>
+
+    <string name="input_from">From</string>
+    <string name="input_to">To</string>
+
+    <string-array name="class_array">
+        <item>Any</item>
+        <item>Business</item>
+        <item>Economy</item>
+    </string-array>
+
+    <string-array name="num_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="adult_label">Adults</string>
+    <string name="children_label">Children</string>
+    <string name="infants_label">Infants</string>
+
+    <string name="button_search">SEARCH</string>
 </resources>
